@@ -3,7 +3,7 @@
 Use the fetch() function and promises [.then()] to handle requests <br>
 
 |4 Common HTTP requests |
-|---------- |
+| ---------- |
   |GET|
  | POST|
  | PUT|

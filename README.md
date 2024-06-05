@@ -8,6 +8,7 @@ Sends that request object to the API endpoint provided.<br>
 Returns a promise that ultimately resolves to a response object, which contains the status of the promise with information the API sent back.<br>
 ## GET REQUEST
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Fetch-Requests/assets/56348190/a3881c0d-9916-4106-ad0e-91d7b29d53ad)
+
 1st call the fetch() function and pass it a URL as a string for the first argument, determining the endpoint of the request.<br>
 The.then() method is chained at the end of the fetch() function<br>
 1st, the response of the GET request is passed to the callback arrow function. <br>

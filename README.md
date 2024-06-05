@@ -1,5 +1,13 @@
-# JAVASCRIPT-Fetch Requests
+# JAVASCRIPT HTTP-Requests
 
+Use the fetch() function and promises [.then()] to handle requests <br>
+
+|4 common HTTP requests are |
+|----------|
+  |GET|
+ | POST|
+ | PUT|
+  |DELETE|
 
 The fetch() function:<br>
 

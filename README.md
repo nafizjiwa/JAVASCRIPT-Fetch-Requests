@@ -40,3 +40,48 @@ A successful POST request will return a response body, which will vary depending
 The rest of the request is identical to the GET request. <BR>
 A .then() method is chained to the fetch() function to check and return the response as well as throw an exception when a network error is encountered. <BR>
 A second .then() method is added on so that we can use the response however we may choose. <BR>
+2 steps in a post request: <br>
+1st set up the POST request by providing the endpoint and the object containing all the necessary information.<br>
+
+    - In the fetch function add
+        - An endpoint argument
+        - An object with required informaiton 
+2nd Handle the POST request
+
+    - the request returns a Promise either resolved or rejected
+      - Resolved - check response ok and then return response (a json ojbec)
+      - Rejected - return error message
+    - A .then method will handle the returned object if resolved
+To Chain .then method syntax:
+
+      fetch(url, {
+        property: value, 
+        property: value
+      }).then(respose => {
+       if(response.ok){
+            return response.json();
+        } throw new Error('Request failed!');
+      }, networkError => {
+          // Previous code
+      ).then(
+          (jsonResponse) => {
+          rendersResponse(jsonResponse); //renderResponse is a helper function in a module  
+          }                              // it will take the jsonResponse and do something with the information 
+      ););
+## Async GET Requests
+
+![image](https://github.com/nafizjiwa/JAVASCRIPT-HTTP-Requests/assets/56348190/c4f343a9-bd81-4593-8b6a-dbd57b24a266)
+
+## Async POST Requests
+![image](https://github.com/nafizjiwa/JAVASCRIPT-HTTP-Requests/assets/56348190/0aeb4a5a-4a77-4660-acff-66f4b630b174)
+
+The syntax for creating an async function using the arrow notation would look like:
+
+    const functionName = async () => {}
+
+
+
+
+
+
+      

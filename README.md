@@ -2,8 +2,8 @@
 
 Use the fetch() function and promises [.then()] to handle requests <br>
 
-|4 common HTTP requests are |
-|----------|
+|4 Common HTTP requests |
+|---------- |
   |GET|
  | POST|
  | PUT|

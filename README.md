@@ -9,8 +9,11 @@
 HTTP REQUESTS CAN ALSO BE MADE WITH async...await and fetch() function <br>
 async...await will contain a try catch statement so .then are not needed ot handle the response object <br>
 
-   The async keyword used as a promise creates an asynchronous function to return a promise
-   The await keyword before fetch() suspends the code until the promise is resolved.
+|KEYWORD | WHERE IS KEYWORD USED | WHAT IS ITS ACTION |
+|:----------:|:----------:|:----------|:----------|
+|async | place in front of a function to create promise | returns a promise |
+| | and an asynchronous function |  |
+|await | place before fetch( ) funciton | To suspend code until fetch promise is resolved |
 
  
 |4 Common HTTP requests |

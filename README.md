@@ -6,8 +6,9 @@
 
 ##### *****-----------------PROMISE.then( ) same as FETCH.then( )-------------------------*****
 
-HTTP REQUESTS CAN ALSO BE MADE WITH async...await and fetch() function <br>
-async...await will contain a try catch statement so .then are not needed ot handle the response object <br>
+#### HTTP REQUESTS CAN ALSO BE MADE WITH
+###### async...await and fetch() function <br>
+async...await will contain a try catch statement so `.then ` is not needed to handle the response object <br>
 
 |KEYWORD | WHERE IS KEYWORD USED | WHAT IS ITS ACTION |
 |:----------:|:----------:|:----------|
@@ -28,11 +29,21 @@ async...await will contain a try catch statement so .then are not needed ot hand
                       - have no body
                       - information required by the source is included in the URL path or query string.
     
-Javascript fetch() function makes requests with Promises:<br>
-   FETCH API<br>
+#### FETCH API 
+
+     fetch('url-that-returns-JSON')    ---> fetch creates a request object (promise) of info
+     .then(                                                ---> needed by endpoint
+             response => response.json();   ---> fetch parses the response as a JSON object
+      ).then(jsonResponse => {
+             console.log(jsonResponse);
+      });
+      
+<br>
+
+###### FETCH API can have a 2nd argrument. <br>
 
      fetch('url', { options: method/body/headers})             //Accepts a 1st Param URL & 2nd Param Options object 
-      .then(                                                                              //(allows to customize the request)
+      .then(                                                              //Optons object (allows to customize the request)
            response  => {                       // then returns a promise (response callback handles success)
               console.log(response);               //that resolves to a response object 
         },                                                    (rejection callback handles failure)
@@ -40,19 +51,6 @@ Javascript fetch() function makes requests with Promises:<br>
              console.error(rejection.message);            if a network error occurs
      );
 
-Options object allows for customization of the request
-     
-#### Here the FETCH API parses the response stream as a JSON object.
-
-     fetch('url-that-returns-JSON')
-     .then(
-             response => response.json();
-      ).then(jsonResponse => {
-             console.log(jsonResponse);
-      });
-      
-- Creates a request object needed by the endpoint when requesting info.<br>
-<br>
 
 ## GET REQUEST
 

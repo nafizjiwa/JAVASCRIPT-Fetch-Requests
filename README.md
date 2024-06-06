@@ -3,9 +3,9 @@
 |Objective | How | What is the result of this request | What do we do with the info |
 |:----------:|:----------:|:----------|:----------|
 |Make HTTP GET request | Use a fetch() function | the request returns a promise (JS objects with data) | Handle the info/request with .then( ) method |
+| |PROMISE.then( ) SAME AS  FETCH.then( )| |
 
-
-PROMISE.then( ); same as FETCH.then( ) <br>
+; same as  <br>
 
 HTTP REQUESTS CAN ALSO BE MADE WITH async...await and fetch() function <br>
 async...await will contain a try catch statement so .then are not needed ot handle the response object <br>

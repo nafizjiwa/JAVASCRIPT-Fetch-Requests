@@ -6,8 +6,6 @@
 
 ##### *****-----------------PROMISE.then( ) same as FETCH.then( )-------------------------*****
 
-; same as  <br>
-
 HTTP REQUESTS CAN ALSO BE MADE WITH async...await and fetch() function <br>
 async...await will contain a try catch statement so .then are not needed ot handle the response object <br>
 

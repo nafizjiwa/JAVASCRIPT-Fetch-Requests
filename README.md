@@ -1,12 +1,18 @@
 # JAVASCRIPT HTTP-Requests
 
-Make an HTTP request using fetch() functions to return promises which are handled by .then<br>
-So, requests return promises which are JS objects of data <br>
-The async keyword used as a promise creates an asynchronous function to return a promise.<br>
-The await keyword before fetch() suspends the code until the promise is resolved. <br>
-PROMISE.then(); same as FETCH.then() <br>
+|Objective | How | What is the result of this request | What do we do with the info |
+|:----------:|:----------:|:----------:|:----------:|
+|Make HTTP GET request | Use a fetch() function | the request returns a promise | Handle the info/request with .then( ) |
+
+   HTTP request returns promises (JS objects of data) <br>
+
+PROMISE.then( ); same as FETCH.then( ) <br>
+
 HTTP REQUESTS CAN ALSO BE MADE WITH async...await and fetch() function <br>
 async...await will contain a try catch statement so .then are not needed ot handle the response object <br>
+
+   The async keyword used as a promise creates an asynchronous function to return a promise
+   The await keyword before fetch() suspends the code until the promise is resolved.
 
  
 |4 Common HTTP requests |

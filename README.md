@@ -50,9 +50,10 @@ Options object allows for customization of the request
       ).then(jsonResponse => {
              console.log(jsonResponse);
       });
-- Creates a request object needed by the endpoint.<br>
-- Request object sent to endpoint.<br>
+      
+- Creates a request object needed by the endpoint when requesting info.<br>
 <br>
+
 ## GET REQUEST
 
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Fetch-Requests/assets/56348190/a3881c0d-9916-4106-ad0e-91d7b29d53ad)

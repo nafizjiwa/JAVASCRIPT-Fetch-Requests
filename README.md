@@ -30,6 +30,7 @@ Javascript fetch() function makes requests with Promises:<br>
 - Request object sent to endpoint.<br>
 <br>
 ## GET REQUEST
+
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Fetch-Requests/assets/56348190/a3881c0d-9916-4106-ad0e-91d7b29d53ad)
 
 1st call the fetch() function and pass it a string URL as first argument, determining the endpoint of the request.<br>

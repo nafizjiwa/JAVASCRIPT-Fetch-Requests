@@ -4,9 +4,9 @@ Make an HTTP request using fetch() functions to return promises which are handle
 So, requests return promises which are JS objects of data <br>
 The async keyword used as a promise creates an asynchronous function to return a promise.<br>
 The await keyword before fetch() suspends the code until the promise is resolved. <br>
-PROMISE.then(); same as FETCH.then()
-HTTP REQUESTS CAN ALSO BE MADE WITH async...await and fetch() function 
-async...await will contain a try catch statement so .then are not needed ot handle the response object
+PROMISE.then(); same as FETCH.then() <br>
+HTTP REQUESTS CAN ALSO BE MADE WITH async...await and fetch() function <br>
+async...await will contain a try catch statement so .then are not needed ot handle the response object <br>
 
  
 |4 Common HTTP requests |
@@ -15,8 +15,10 @@ async...await will contain a try catch statement so .then are not needed ot hand
  | POST|
  | PUT|
   |DELETE|
-    `HTTP GET requests retrieve information or data from a source (server)`<br>
-    `GET requests have no body  so information required by the source to the proper response is included in the URL path or query string.`<br>
+  
+    `HTTP GET requests - retrieve information or data from a source (server)`
+    `                  - have no body
+    `                  - information required by the source is included in the URL path or query string.`
     
 Javascript fetch() function makes requests with Promises:<br>
    FETCH API<br>

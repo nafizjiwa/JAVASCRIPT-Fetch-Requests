@@ -56,8 +56,9 @@ async...await will contain a try catch statement so `.then ` is not needed to ha
 
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Fetch-Requests/assets/56348190/a3881c0d-9916-4106-ad0e-91d7b29d53ad)
 
+
 | Input | Events in Diagram  | Action |
-|:----------:|:----------:|
+|:----------:|:----------:|:----------:|
 |1st | call fetch() with URL argument | GET promise returned|
 |GET response| passed to a .then() method | response passed to a callback fnc|
 |callback function | checks the ok property of the response object |

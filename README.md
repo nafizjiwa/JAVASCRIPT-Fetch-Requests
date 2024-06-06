@@ -12,8 +12,7 @@ async...await will contain a try catch statement so `.then ` is not needed to ha
 
 |KEYWORD | WHERE IS KEYWORD USED | WHAT IS ITS ACTION |
 |:----------:|:----------:|:----------|
-|async | place in front of a function to create promise | returns a promise |
-| | and an asynchronous function |  |
+|async | in front of function to create an asynchronous fnc | so it can return a promise |
 |await | in an async funciton place before fetch( ) | Suspends code until fetch promise is resolved |
 <br>
 <br>

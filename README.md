@@ -43,10 +43,10 @@ The rest of the request is identical to the GET request. <BR>
 A .then() method is chained to the fetch() function to check and return the response as well as throw an exception when a network error is encountered. <BR>
 A second .then() method is added on so that we can use the response however we may choose. <BR>
 ### 2 STEPS in a POST REQUEST:
-1st SET UP THE POST REQUEST by providing the endpoint and an object with additional information about the POST.<br>
+1st SET UP THE POST REQUEST by providing the endpoint and an a request object which contains information about the POST.<br>
 
     - In the fetch() function add
-        - fetch(endpoint argument, An object with POST info) 
+        - fetch(endpoint argument, request object with POST info) 
         
 2nd Handle the POST request
 

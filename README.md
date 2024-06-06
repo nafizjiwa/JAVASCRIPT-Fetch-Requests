@@ -121,13 +121,14 @@ To Chain .then method syntax:
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-HTTP-Requests/assets/56348190/c4f343a9-bd81-4593-8b6a-dbd57b24a266)
 
 ### Async POST Requests
-The fetch() method is inside the 
+The fetch() method is inside the a try{ }catch(){ } statement
 
-   try{
-      const variable = fetch promise set to variable
-    }catch statement{
-   
-   }
+     try{
+        const variable = fetch promise set to variable
+        
+      }catch statement{
+     
+     }
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-HTTP-Requests/assets/56348190/0aeb4a5a-4a77-4660-acff-66f4b630b174)
 
 Async arrow function syntax:

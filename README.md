@@ -16,9 +16,9 @@ async...await will contain a try catch statement so .then are not needed ot hand
  | PUT|
   |DELETE|
   
-    `HTTP GET requests - retrieve information or data from a source (server)`
-    `                  - have no body
-    `                  - information required by the source is included in the URL path or query string.`
+    HTTP GET requests - retrieve information or data from a source (server)
+                      - have no body
+                      - information required by the source is included in the URL path or query string.
     
 Javascript fetch() function makes requests with Promises:<br>
    FETCH API<br>

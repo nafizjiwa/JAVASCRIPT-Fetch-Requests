@@ -56,17 +56,19 @@ async...await will contain a try catch statement so `.then ` is not needed to ha
 
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Fetch-Requests/assets/56348190/a3881c0d-9916-4106-ad0e-91d7b29d53ad)
 
-1st call the fetch() function and pass it a string URL as first argument, determining the endpoint of the request.<br>
-The.then() method is chained at the end of the fetch() function<br>
-1st, the response of the GET request is passed to the callback arrow function. <br>
-Inside the callback function, the ok property of the response object returns a Boolean value. If there are no errors, response.ok will be true and the code will return response.json().
+| Input | Events in Diagram  | Action |
+|:----------:|:----------:|
+|1st | call fetch() with URL argument | GET promise returned|
+|GET response| passed to a .then() method | response passed to a callback fnc|
+|callback function | checks the ok property of the response object |
+| If response.ok = true | object returned successfully | return is a response.json() |
+| If response.ok = falsy | call fetch() with URL argument | code will throw an error|
+| Second .then() argument func triggers | if Promise rejected ||
+| argument 'networkError' | if endpoint not reached/server down | object logs networkError|
 
-If response.ok is a falsy value, our code will throw an error.<br>
-A second argument passed to .then() will be another arrow function that will be triggered when the promise is rejected. It takes a single parameter, networkError. <br>
-This object logs the networkError if we could not reach the endpoint at all (e.g., the server is down).<br>
 
-A second .then() method will run after the previous .then() method has finished running without error. <br>
-It takes jsonResponse, which contains the returned response.json() object from the previous .then() method, as its parameter and can now be handled, however we may choose.<br>
+1st .then() runs no errror trigger 2nd .then(). <br>
+2nd .then takes returned jsonResponse (a response.json() object) as a parameter to handled how it wants.<br>
 
 ## POST REQUEST
 HTTP POST requests send new information to the source (server).

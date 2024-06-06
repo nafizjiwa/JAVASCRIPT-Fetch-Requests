@@ -121,7 +121,7 @@ To Chain .then method syntax:
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-HTTP-Requests/assets/56348190/c4f343a9-bd81-4593-8b6a-dbd57b24a266)
 
 ### Async POST Requests
-The fetch() method is inside the a try{ }catch(){ } statement
+The fetch() method is inside the a try...catch... statement
 
      try{
         const variable = fetch promise set to variable

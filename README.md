@@ -13,8 +13,9 @@ async...await will contain a try catch statement so .then are not needed ot hand
 |:----------:|:----------:|:----------|
 |async | place in front of a function to create promise | returns a promise |
 | | and an asynchronous function |  |
-|await | place before fetch( ) funciton | To suspend code until fetch promise is resolved |
-
+|await | in an async funciton place before fetch( ) | Suspends code until fetch promise is resolved |
+<br>
+<br>
  
 |4 Common HTTP requests |
 |:----------:|

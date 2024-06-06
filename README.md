@@ -2,8 +2,8 @@
 
 Make an HTTP request with a async and fetch() functions to return promises which are handled by .then<br>
 So, requests return promises which are JS objects of data <br>
-The async keyword creates asynchronous functions that will return promises.<br>
-The await keyword suspends the program while waiting for a promise to resolve. <br>
+The async keyword creates asynchronous functions that returns promises (so creates a promise).<br>
+The await keyword suspends the program while wthe promise resolves. <br>
 
  
 |4 Common HTTP requests |
@@ -17,14 +17,14 @@ The await keyword suspends the program while waiting for a promise to resolve. <
     
 Javascript fetch() function makes requests with Promises:<br>
 
-   fetch('url')                              //Accepts a URL parameter
-    .then(                                                (response callback handles success) and the .
-         response  => {                       // then returns a promise 
-            console.log(response);               //that resolves to a response object 
-      },                                                    (rejection callback handles failure)
-         rejection => {                              //or rejects with an error message 
-           console.error(rejection.message);            if a network error occurs
-   );s
+     fetch('url', {request options method or body})             //Accepts a 1st Param URL and a 2nd Param object
+      .then(                                                (response callback handles success) and the .
+           response  => {                       // then returns a promise 
+              console.log(response);               //that resolves to a response object 
+        },                                                    (rejection callback handles failure)
+           rejection => {                              //or rejects with an error message 
+             console.error(rejection.message);            if a network error occurs
+     );s
    
 - Creates a request object needed by the endpoint.<br>
 - Request object sent to endpoint.<br>
@@ -45,6 +45,7 @@ A second .then() method will run after the previous .then() method has finished 
 It takes jsonResponse, which contains the returned response.json() object from the previous .then() method, as its parameter and can now be handled, however we may choose.<br>
 
 ## POST REQUEST
+HTTP POST requests send new information to the source (server).
 
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Fetch-Requests/assets/56348190/efd42bc3-1032-4662-8c02-d253cee435d0)
 

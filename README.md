@@ -1,7 +1,7 @@
 # JAVASCRIPT HTTP-Requests
 
-Use the fetch() function and promises [.then()] to handle requests <br>
-
+Use the fetch() function and promises [.then()] to handle HTTTP requests <br>
+ 
 |4 Common HTTP requests |
 |:----------:|
   |GET|
@@ -33,19 +33,21 @@ It takes jsonResponse, which contains the returned response.json() object from t
 
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Fetch-Requests/assets/56348190/efd42bc3-1032-4662-8c02-d253cee435d0)
 
-Notice that the fetch() call takes two arguments: an endpoint and an object that contains information needed for the POST request. <BR>
-The object passed to the fetch() function as its second argument contains two properties: method, with a value of 'POST', and body, with a value of JSON.stringify({id: '200'});. <BR>
+The fetch() call takes 2 arguments: an endpoint and an object. <BR>
+The object contains 2 properties: 
+    1. method, with a value of 'POST', and 
+    2. body, with a value of JSON.stringify({id: '200'});. 
 This second argument determines that this request is a POST request and what information will be sent to the API.<BR>
 A successful POST request will return a response body, which will vary depending on how the API is set up.<BR>
 The rest of the request is identical to the GET request. <BR>
 A .then() method is chained to the fetch() function to check and return the response as well as throw an exception when a network error is encountered. <BR>
 A second .then() method is added on so that we can use the response however we may choose. <BR>
-2 steps in a post request: <br>
-1st set up the POST request by providing the endpoint and the object containing all the necessary information.<br>
+### 2 STEPS in a POST REQUEST:
+1st SET UP THE POST REQUEST by providing the endpoint and an object with additional information about the POST.<br>
 
-    - In the fetch function add
-        - An endpoint argument
-        - An object with required informaiton 
+    - In the fetch() function add
+        - fetch(endpoint argument, An object with POST info) 
+        
 2nd Handle the POST request
 
     - the request returns a Promise either resolved or rejected
@@ -75,7 +77,7 @@ To Chain .then method syntax:
 ## Async POST Requests
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-HTTP-Requests/assets/56348190/0aeb4a5a-4a77-4660-acff-66f4b630b174)
 
-The syntax for creating an async function using the arrow notation would look like:
+Async arrow function syntax:
 
     const functionName = async () => {}
 

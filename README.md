@@ -1,9 +1,12 @@
 # JAVASCRIPT HTTP-Requests
 
-Make an HTTP request with a async and fetch() functions to return promises which are handled by .then<br>
+Make an HTTP request using fetch() functions to return promises which are handled by .then<br>
 So, requests return promises which are JS objects of data <br>
-The async keyword creates asynchronous functions that returns promises (so creates a promise).<br>
-The await keyword suspends the program while wthe promise resolves. <br>
+The async keyword used as a promise creates an asynchronous function to return a promise.<br>
+The await keyword before fetch() suspends the code until the promise is resolved. <br>
+PROMISE.then(); same as FETCH.then()
+HTTP REQUESTS CAN ALSO BE MADE WITH async...await and fetch() function 
+async...await will contain a try catch statement so .then are not needed ot handle the response object
 
  
 |4 Common HTTP requests |
@@ -16,16 +19,27 @@ The await keyword suspends the program while wthe promise resolves. <br>
     `GET requests have no body  so information required by the source to the proper response is included in the URL path or query string.`<br>
     
 Javascript fetch() function makes requests with Promises:<br>
+   FETCH API<br>
 
-     fetch('url', {request options method or body})             //Accepts a 1st Param URL and a 2nd Param object
-      .then(                                                (response callback handles success) and the .
-           response  => {                       // then returns a promise 
+     fetch('url', { options: method/body/headers})             //Accepts a 1st Param URL & 2nd Param Options object 
+      .then(                                                                              //(allows to customize the request)
+           response  => {                       // then returns a promise (response callback handles success)
               console.log(response);               //that resolves to a response object 
         },                                                    (rejection callback handles failure)
            rejection => {                              //or rejects with an error message 
              console.error(rejection.message);            if a network error occurs
-     );s
-   
+     );
+
+Options object allows for customization of the request
+     
+#### Here the FETCH API parses the response stream as a JSON object.
+
+     fetch('url-that-returns-JSON')
+     .then(
+             response => response.json();
+      ).then(jsonResponse => {
+             console.log(jsonResponse);
+      });
 - Creates a request object needed by the endpoint.<br>
 - Request object sent to endpoint.<br>
 <br>
@@ -51,10 +65,11 @@ HTTP POST requests send new information to the source (server).
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Fetch-Requests/assets/56348190/efd42bc3-1032-4662-8c02-d253cee435d0)
 
 The fetch() call takes 2 arguments: an endpoint and an object. <BR>
-The object contains 2 properties: 
-    1. method, with a value of 'POST', and 
-    2. body, with a value of JSON.stringify({id: '200'});. 
-This second argument determines that this request is a POST request and what information will be sent to the API.<BR>
+
+    The object contains 2 properties: 
+        1. method: 'POST' ----> says this request is a POST
+        2. body: JSON.stringify({id: '200'});  -----> submit data or info to the API
+
 A successful POST request will return a response body, which will vary depending on how the API is set up.<BR>
 The rest of the request is identical to the GET request. <BR>
 A .then() method is chained to the fetch() function to check and return the response as well as throw an exception when a network error is encountered. <BR>
